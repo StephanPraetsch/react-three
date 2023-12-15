@@ -7,7 +7,7 @@ function render(refContainer: any) {
     const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
     const renderer = new THREE.WebGLRenderer();
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
     refContainer.current?.appendChild(renderer.domElement);
 
     camera.position.set(0, 0, 100);
