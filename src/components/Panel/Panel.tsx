@@ -3,10 +3,12 @@ import styles from "./Panel.module.css";
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {RotatingCube} from "../RotatingCube/RotatingCube";
 import {ThreeLines} from "../ThreeLines/ThreeLines";
+import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
 
 const map = new Map<string, JSX.Element>([
     ["RotatingCube", <RotatingCube/>],
     ["ThreeLines", <ThreeLines/>],
+    ["OrbitControl", <OrbitControlsReactElement/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
