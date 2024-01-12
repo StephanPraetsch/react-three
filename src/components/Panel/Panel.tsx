@@ -4,11 +4,13 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 import {RotatingCube} from "../RotatingCube/RotatingCube";
 import {ThreeLines} from "../ThreeLines/ThreeLines";
 import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
+import {InteractiveScene} from "../InteractiveScene/InteractiveScene";
 
 const map = new Map<string, JSX.Element>([
     ["RotatingCube", <RotatingCube/>],
     ["ThreeLines", <ThreeLines/>],
     ["OrbitControl", <OrbitControlsReactElement/>],
+    ["InteractiveScene", <InteractiveScene/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
