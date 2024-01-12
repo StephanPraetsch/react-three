@@ -86,7 +86,7 @@ function render(refContainer: any) {
         // Stats
 
         stats = new Stats();
-        document.body.appendChild(stats.dom);
+        refContainer.current?.appendChild(stats.dom);
 
         // Renderer
 
@@ -103,78 +103,47 @@ function render(refContainer: any) {
         renderer.clippingPlanes = Empty; // GUI sets it to globalPlanes
         renderer.localClippingEnabled = true;
 
-        // Controls
-
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.target.set(0, 1, 0);
         controls.update();
 
-        // GUI
-
         const gui = new GUI(),
             folderLocal = gui.addFolder('Local Clipping'),
             propsLocal = {
-
                 get 'Enabled'() {
-
                     return renderer.localClippingEnabled;
-
                 },
                 set 'Enabled'(v) {
-
                     renderer.localClippingEnabled = v;
-
                 },
-
                 get 'Shadows'() {
-
                     return material.clipShadows;
-
                 },
                 set 'Shadows'(v) {
-
                     material.clipShadows = v;
-
                 },
-
                 get 'Plane'() {
-
                     return localPlane.constant;
-
                 },
                 set 'Plane'(v) {
-
                     localPlane.constant = v;
-
                 }
-
             },
 
             folderGlobal = gui.addFolder('Global Clipping'),
             propsGlobal = {
-
                 get 'Enabled'() {
-
                     return renderer.clippingPlanes !== Empty;
-
                 },
                 set 'Enabled'(v) {
-
                     renderer.clippingPlanes = v ? globalPlanes : Empty;
-
                 },
-
                 get 'Plane'() {
-
                     return globalPlane.constant;
-
                 },
                 set 'Plane'(v) {
-
                     globalPlane.constant = v;
-
                 }
-
             };
 
         folderLocal.add(propsLocal, 'Enabled');
@@ -183,8 +152,6 @@ function render(refContainer: any) {
 
         folderGlobal.add(propsGlobal, 'Enabled');
         folderGlobal.add(propsGlobal, 'Plane', -0.4, 3);
-
-        // Start
 
         startTime = Date.now();
 
