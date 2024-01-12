@@ -6,8 +6,10 @@ import {ThreeLines} from "../ThreeLines/ThreeLines";
 import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
 import {InteractiveScene} from "../InteractiveScene/InteractiveScene";
 import {InteractiveCubes} from "../InteractiveCubes/InteractiveCubes";
+import {MyGraph} from "../MyGraph/MyGraph";
 
 const map = new Map<string, JSX.Element>([
+    ["MyGraph", <MyGraph/>],
     ["RotatingCube", <RotatingCube/>],
     ["ThreeLines", <ThreeLines/>],
     ["OrbitControl", <OrbitControlsReactElement/>],
