@@ -5,12 +5,14 @@ import {RotatingCube} from "../RotatingCube/RotatingCube";
 import {ThreeLines} from "../ThreeLines/ThreeLines";
 import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
 import {InteractiveScene} from "../InteractiveScene/InteractiveScene";
+import {InteractiveCubes} from "../InteractiveCubes/InteractiveCubes";
 
 const map = new Map<string, JSX.Element>([
     ["RotatingCube", <RotatingCube/>],
     ["ThreeLines", <ThreeLines/>],
     ["OrbitControl", <OrbitControlsReactElement/>],
     ["InteractiveScene", <InteractiveScene/>],
+    ["InteractiveCubes", <InteractiveCubes/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
