@@ -19,7 +19,7 @@ const map = new Map<string, JSX.Element>([
 
 function Panel(): ReactElement<HTMLFormElement> {
 
-    const [selection, setSelection] = useState<string>("RotatingCube");
+    const [selection, setSelection] = useState<string>(map.keys().next().value);
 
     let selectedComponent = map.get(selection);
 
