@@ -31,7 +31,7 @@ function render(refContainer: any) {
 
 }
 
-export function MyGraph(): ReactElement<HTMLFormElement> {
+export function MyScene(): ReactElement<HTMLFormElement> {
     const refContainer = useRef(null);
     useEffect(() => {
         render(refContainer);

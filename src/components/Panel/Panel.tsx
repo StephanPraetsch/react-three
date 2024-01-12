@@ -6,16 +6,18 @@ import {ThreeLines} from "../ThreeLines/ThreeLines";
 import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
 import {InteractiveScene} from "../InteractiveScene/InteractiveScene";
 import {InteractiveCubes} from "../InteractiveCubes/InteractiveCubes";
-import {MyGraph} from "../MyGraph/MyGraph";
 import Config from "../Config/Config";
+import {TextReactElement} from "../Text/Text";
+import {MyScene} from "../MyScene/MyScene";
 
 const map = new Map<string, React.JSX.Element>([
-    ["MyGraph", <MyGraph key={"MyGraph"}/>],
+    ["MyScene", <MyScene key={"MyScene"}/>],
     ["RotatingCube", <RotatingCube key={"RotatingCube"}/>],
     ["ThreeLines", <ThreeLines key={"ThreeLines"}/>],
     ["OrbitControl", <OrbitControlsReactElement key={"OrbitControlsReactElement"}/>],
     ["InteractiveScene", <InteractiveScene key={"InteractiveScene"}/>],
     ["InteractiveCubes", <InteractiveCubes key={"InteractiveCubes"}/>],
+    ["Text", <TextReactElement key={"TextReactElement"}/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
