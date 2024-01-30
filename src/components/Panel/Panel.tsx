@@ -7,8 +7,9 @@ import {OrbitControlsReactElement} from "../OrbitControl/OrbitControl";
 import {InteractiveScene} from "../InteractiveScene/InteractiveScene";
 import {InteractiveCubes} from "../InteractiveCubes/InteractiveCubes";
 import Config from "../Config/Config";
-import {TextReactElement} from "../Text/Text";
 import {MyScene} from "../MyScene/MyScene";
+import {HelloWorldCube} from "../CubeWithText/HelloWorldCube";
+import {TextReactElement} from "../Text/Text";
 
 const map = new Map<string, React.JSX.Element>([
     ["MyScene", <MyScene key={"MyScene"}/>],
@@ -17,7 +18,8 @@ const map = new Map<string, React.JSX.Element>([
     ["OrbitControl", <OrbitControlsReactElement key={"OrbitControlsReactElement"}/>],
     ["InteractiveScene", <InteractiveScene key={"InteractiveScene"}/>],
     ["InteractiveCubes", <InteractiveCubes key={"InteractiveCubes"}/>],
-    ["Text", <TextReactElement key={"TextReactElement"}/>],
+    ["Text", <TextReactElement key={"Text"}/>],
+    ["HelloWorldCube", <HelloWorldCube key={"HelloWorldCube"}/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
