@@ -17,3 +17,5 @@ yarn test
 * https://threejs.org/examples/#webgl_interactive_cubes_ortho
 * text: https://threejs.org/examples/#webgl_geometry_text
 * beginner example (press CTRL+U and copy the script code): https://hofk.de/main/discourse.threejs/BeginnerExample/BeginnerExample.html
+* https://threejs.org/examples/#webgl_loader_pdb
+* https://threejs.org/examples/#misc_controls_transform
