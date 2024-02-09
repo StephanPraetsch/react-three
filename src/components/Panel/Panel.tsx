@@ -10,6 +10,7 @@ import Config from "../Config/Config";
 import {MyScene} from "../MyScene/MyScene";
 import {HelloWorldCube} from "../CubeWithText/HelloWorldCube";
 import {TextReactElement} from "../Text/Text";
+import {Dodecahedron} from "../Dodecahedron/Dodecahedron";
 
 const map = new Map<string, React.JSX.Element>([
     ["MyScene", <MyScene key={"MyScene"}/>],
@@ -20,6 +21,7 @@ const map = new Map<string, React.JSX.Element>([
     ["InteractiveCubes", <InteractiveCubes key={"InteractiveCubes"}/>],
     ["Text", <TextReactElement key={"Text"}/>],
     ["HelloWorldCube", <HelloWorldCube key={"HelloWorldCube"}/>],
+    ["Dodecahedron", <Dodecahedron key={"Dodecahedron"}/>],
 ]);
 
 function Panel(): ReactElement<HTMLFormElement> {
