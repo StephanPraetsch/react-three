@@ -1,9 +1,11 @@
 # playground for threejs with react
 
-*10% projecct*
-
 use node 19
+```bash
+nvm use 19
+```
 
+then start
 ```
 yarn 
 yarn start
