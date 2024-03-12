@@ -26,7 +26,7 @@ const map = new Map<string, React.JSX.Element>([
 
 function Panel(): ReactElement<HTMLFormElement> {
 
-    const [selectedScene, setSelectedScene] = useState<string>(map.keys().next().value);
+    const [selectedScene, setSelectedScene] = useState<string>("Dodecahedron");
 
     let scene = map.get(selectedScene);
 
